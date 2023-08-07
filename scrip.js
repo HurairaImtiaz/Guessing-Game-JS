@@ -1,0 +1,1 @@
+let maxNum = parseInt(prompt(" Hey Champ! Enter a MAximum number :"))
