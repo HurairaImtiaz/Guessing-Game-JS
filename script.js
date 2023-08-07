@@ -12,7 +12,7 @@ const targetNum = Math.floor(Math.random() * maxNum) + 1;
 
 // asked to guess the correct number
 
-let yourGuess = parseInt(prompt("Enter your First Guess:"));
+let yourGuess = prompt("Enter your First Guess:  (type 'q' to Quit!)");
 
 //to count the number of trails
 
@@ -22,22 +22,27 @@ let attempts = 1;
 
 while (parseInt(yourGuess) !== targetNum){
     if(yourGuess === 'q') break;
-    attempts++;
+    yourGuess = parseInt(yourGuess);
+    
     if (yourGuess > targetNum){
-        yourGuess = prompt("Too High! Guess again:")
+        yourGuess = prompt("Too High! Guess again:");
+        attempts++;
     }
-    else{
-        yourGuess = prompt("Too Low! Guess again:")
+    else if(yourGuess< targetNum){
+        yourGuess = prompt("Too Low! Guess again:");
+        attempts++;
+    } else{
+        yourGuess = prompt("Enter a Invalid Number. Enter a NUmber:  (type 'q' to Quit!) ")
     }
 }
 //checked if user quit or successfully guess the number 
 
 if(yourGuess === 'q'){
-    prompt("Alas! Dont loose hope . Better Luck Next Time Champ!")
+    alert("Alas! Dont loose hope . Better Luck Next Time Champ!")
 }
 else{
     
-    prompt(`COngratulations! You Got it! it took ${attempts} to guess. THANK YOU ! SEE YOU SOON CHAMP. ` )
+    alert(`COngratulations! You Got it! it took ${attempts} to guess. THANK YOU ! SEE YOU SOON CHAMP. ` )
     
 }
 
