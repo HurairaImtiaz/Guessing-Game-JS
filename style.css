@@ -52,7 +52,10 @@ body, html {
     text-decoration: none;
     text-align:left ;
   }
-
+.footer{
+    font-size: 10px;
+    margin-top: 20px;
+}
 
   @media (max-width: 768px) {
     .text {
