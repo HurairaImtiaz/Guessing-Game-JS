@@ -42,7 +42,7 @@ if(yourGuess === 'q'){
 }
 else{
     
-    alert(`COngratulations! You Got it! it took ${attempts} to guess. THANK YOU ! SEE YOU SOON CHAMP. ` )
+    alert(`COngratulations! You Got it! it took ${attempts} attempts to guess the correct number. THANK YOU ! SEE YOU SOON CHAMP. ` );
     
 }
 

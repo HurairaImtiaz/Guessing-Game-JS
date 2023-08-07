@@ -27,8 +27,8 @@ body, html {
   }
 
   .text {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
   }
 
   .custom-btn {
@@ -47,6 +47,10 @@ body, html {
     background-color: #0a1dc3a0;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px);
+  }
+  .ulh3{
+    text-decoration: none;
+    text-align:left ;
   }
 
 
